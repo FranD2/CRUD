@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>PHP MsSQL CRUD</title>
-    <!-- CDN de Bootstrap 4-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script>
         function validarform() {
             var x = document.forms["form"]["id"].value;
@@ -37,7 +37,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <?php session_unset(); } #Libera todas las variables de sesión ?>
+            <?php session_unset(); }
             <div class="row">
                 <div class="col-md-4 mx-auto">
                     <div class="card card-body">
@@ -79,7 +79,6 @@
                                         $query = "SELECT * FROM datos";
                                         $result = mysqli_query($conn, $query);
                                         while($row = mysqli_fetch_array($result)){ 
-                                        #Obtiene una fila de resultados como un array asociativo, numérico, o ambos
                             ?>
                             <tr>
                                 <td><?php echo $row['id'] ?></td>
@@ -98,10 +97,10 @@
                             <?php } ?>
                         </tbody>
                     </table>
-                </div> <!--End col-md-8-->
-            </div> <!--End row-->
-        </div><!--End container p-4-->
-    </div><!--End container-->
+                </div>
+            </div> 
+        </div>
+    </div>
 </body>
 
 </html>
