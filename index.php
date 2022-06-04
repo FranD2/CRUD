@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>PHP MsSQL CRUD</title>
+    <link rel="icon"  href="img/icon.jpg">
+    <title>PHP MySQL CRUD</title>
+    <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -20,14 +22,17 @@
         }
     </script>
 </head>
-
 <body>
-    <div class="container">
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container">
-                <a href="index.php" class="navbar-brand">PHP MySQL CRUD</a>
-            </div>
         </nav>
+        <header>
+        <section>
+            <h1> Proyecto Sistemas de Información</h1>
+            <div class="conte">
+                <p>PHP MySQL CRUD</p>
+                <p>Bienvenido</p>
+            </div>
+        </section>
+    </header>
         <div class="container p-4">
             <?php include("conexion.php");
                         if(isset($_SESSION['message'])){?>
@@ -37,7 +42,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <?php session_unset(); }
+            <?php session_unset(); }?> 
             <div class="row">
                 <div class="col-md-4 mx-auto">
                     <div class="card card-body">
@@ -67,6 +72,7 @@
                     <table class="table table-hover">
                         <thead>
                             <tr>
+
                                 <th>ID</th>
                                 <th>Nombre</th>
                                 <th>Dirección</th>
@@ -101,6 +107,16 @@
             </div> 
         </div>
     </div>
+    <aside></aside>
+    <footer>
+        <div id="redes">
+            <img src="img/YouTube2.jpg">
+            <img src="img/facebook.jpg">
+            <img src="img/Discordlogo.jpg">
+
+        </div>
+    </footer>
+            <div class="conte">
 </body>
 
 </html>
