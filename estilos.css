@@ -7,7 +7,7 @@
 
 body{
 
-        color: white;
+        color: rgb(14, 197, 243);
         font-family: 'calibri';
         margin:0;
         font-size: 1.2rem;
@@ -15,7 +15,7 @@ body{
 }
 
 header{
-    background: url('img/cabecera-2.jpg');
+    background: url('img/header.jpg');
     height: 250px;
     overflow: hidden;
     background-size: cover;
