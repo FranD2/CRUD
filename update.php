@@ -24,7 +24,7 @@
     <div class="container">
         <nav class="navbar navbar-dark  bg-dark">
             <div class="container">
-                <a href="index.php" class="navbar-brand">PHP MySQL CRUD</a>
+                <a href="user.php" class="navbar-brand">PHP MySQL CRUD</a>
             </div>
         </nav>
         <?php
@@ -54,7 +54,7 @@
                 mysqli_query($conn, $update);
                 $_SESSION['message'] = 'Registro actualizado exitosamente';
                 $_SESSION['message_type'] = 'info'; # Función de bootstrap
-                header('Location:index.php');
+                header('Location:user.php');
             }
         ?>
         <div class="container p-4">
