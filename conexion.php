@@ -2,7 +2,7 @@
     session_start(); #Inicia una secion o reanuda una exixtente
     $servername = "localhost";   #Localhost o IP
     $username = "root";          #Usuario de la dB
-    $password = "Magooscuro2021";   #Contraseña de la dB
+    $password = "";   #Contraseña de la dB
     $database = "sistema";       #Nombre de la db
     $port = "3306";              #puerto por el que se conecta la dB
     $conn = mysqli_connect($servername, $username, $password, $database, $port);
